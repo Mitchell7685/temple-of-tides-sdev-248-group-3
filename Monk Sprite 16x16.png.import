@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://daekkf6hpwcds"
+=======
+uid="uid://cl3wjioj4em6a"
+>>>>>>> Stashed changes
 path="res://.godot/imported/Monk Sprite 16x16.png-f0cec174b7653b01d50b8f8da26571b4.ctex"
 metadata={
 "vram_texture": false
