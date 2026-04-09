@@ -14,6 +14,11 @@ config/name="Temple-of-Tides-SDEV-248-Group-3"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=840
+window/stretch/mode="canvas_items"
+
 [editor]
 
 version_control/plugin_name="GitPlugin"
@@ -25,4 +30,5 @@ version_control/autoload_on_startup=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"

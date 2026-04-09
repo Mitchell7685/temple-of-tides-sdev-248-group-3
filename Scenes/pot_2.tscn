@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bwd1ktsofctso"]
+
+[ext_resource type="Texture2D" uid="uid://cgmrpl5pdyqf7" path="res://Water Temple Tile Set finale.png" id="1_gwv8h"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ocvmc"]
+radius = 16.0
+height = 68.0
+
+[node name="pot_2" type="Node2D" unique_id=1250884347]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1162829277]
+position = Vector2(17, -33)
+scale = Vector2(2.114785, 2.0266685)
+texture = ExtResource("1_gwv8h")
+region_enabled = true
+region_rect = Rect2(175.91008, 64.12761, 16.190598, 31.813026)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1070667462]
+position = Vector2(18, -34)
+shape = SubResource("CapsuleShape2D_ocvmc")
