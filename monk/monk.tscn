@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://ck3c6j3315ksc"]
+
+[ext_resource type="Script" uid="uid://be7a3hvyqom30" path="res://monk/monk.gd" id="1_255bk"]
+[ext_resource type="Texture2D" uid="uid://7ik84xyd5mvd" path="res://Monk sprite.png" id="2_kognl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_73p1c"]
+atlas = ExtResource("2_kognl")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_amy51"]
+atlas = ExtResource("2_kognl")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ca1ql"]
+atlas = ExtResource("2_kognl")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_yvo7p"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_73p1c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_amy51")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ca1ql")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yn4wo"]
+size = Vector2(18, 28)
+
+[node name="Monk" type="StaticBody2D" unique_id=1468979152]
+script = ExtResource("1_255bk")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=872788267]
+sprite_frames = SubResource("SpriteFrames_yvo7p")
+frame = 1
+frame_progress = 0.38835785
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1966532746]
+shape = SubResource("RectangleShape2D_yn4wo")
