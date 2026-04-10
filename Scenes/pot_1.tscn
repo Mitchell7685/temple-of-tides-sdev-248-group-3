@@ -4,6 +4,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_todo8"]
 radius = 7.0
+height = 28.0
 
 [node name="pot_1" type="Node2D" unique_id=813135876]
 
