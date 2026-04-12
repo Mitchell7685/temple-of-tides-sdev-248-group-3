@@ -28,21 +28,24 @@ animations = [{
 "texture": SubResource("AtlasTexture_ca1ql")
 }],
 "loop": true,
-"name": &"default",
+"name": &"idle",
 "speed": 5.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yn4wo"]
-size = Vector2(18, 28)
+size = Vector2(18, 29)
 
 [node name="Monk" type="StaticBody2D" unique_id=1468979152]
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_255bk")
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=872788267]
 sprite_frames = SubResource("SpriteFrames_yvo7p")
-frame = 1
-frame_progress = 0.38835785
+animation = &"idle"
+autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1966532746]
+position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_yn4wo")
