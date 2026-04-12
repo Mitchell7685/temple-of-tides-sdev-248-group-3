@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgsymh1tixf22"
-path="res://.godot/imported/Left Idle-Sheet.png-5ac2522bc32b75dec277f4ea3c4752ca.ctex"
+uid="uid://bpfdm7x7p2bl1"
+path="res://.godot/imported/Mob1 walk Front sheet.png-dbe5322db9b829b87f8d967655551c8e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Finished Human Sprite sheets/Left Idle-Sheet.png"
-dest_files=["res://.godot/imported/Left Idle-Sheet.png-5ac2522bc32b75dec277f4ea3c4752ca.ctex"]
+source_file="res://MOB Sprite sheets/Mob1 walk Front sheet.png"
+dest_files=["res://.godot/imported/Mob1 walk Front sheet.png-dbe5322db9b829b87f8d967655551c8e.ctex"]
 
 [params]
 
