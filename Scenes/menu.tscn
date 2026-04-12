@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cw07g8gklxx2q"]
+
+[ext_resource type="FontFile" uid="uid://dvgqj0eodu05e" path="res://Fonts/ARCADECLASSIC.TTF" id="1_1rerr"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xhh6f"]
+font = ExtResource("1_1rerr")
+font_size = 31
+
+[node name="Menu" type="Control" unique_id=1865759173]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="." unique_id=231506389]
+layout_mode = 0
+offset_top = 198.0
+offset_right = 841.0
+offset_bottom = 645.0
+text = "Press Enter To Start"
+label_settings = SubResource("LabelSettings_xhh6f")
+horizontal_alignment = 1
+vertical_alignment = 1

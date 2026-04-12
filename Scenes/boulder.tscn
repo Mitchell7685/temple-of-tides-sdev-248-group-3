@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://dcl8u165h4lir"]
+[gd_scene format=3 uid="uid://c0ehx8wdlldjq"]
 
-[ext_resource type="Texture2D" uid="uid://cgmrpl5pdyqf7" path="res://Water Temple Tile Set finale.png" id="1_gra7m"]
+[ext_resource type="Texture2D" uid="uid://su2gy0dt0rmh" path="res://Water Temple Tile Set finale.png" id="1_gra7m"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4dqbg"]
 radius = 52.009613

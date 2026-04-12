@@ -1,6 +1,10 @@
 [gd_scene format=4 uid="uid://bht2tvgfgruay"]
 
 [ext_resource type="Texture2D" uid="uid://cgmrpl5pdyqf7" path="res://Water Temple Tile Set finale.png" id="1_rwlaw"]
+[ext_resource type="PackedScene" uid="uid://s74t3dh0cm66" path="res://Scenes/pot_1.tscn" id="2_p0lpc"]
+[ext_resource type="PackedScene" uid="uid://bovxjkivj33cv" path="res://Scenes/small_pot_2.tscn" id="3_2qrgi"]
+[ext_resource type="PackedScene" uid="uid://bwd1ktsofctso" path="res://Scenes/pot_2.tscn" id="4_kuvy6"]
+[ext_resource type="PackedScene" uid="uid://tgftw06tkfb8" path="res://Scenes/small_pot_1.tscn" id="5_mt38d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_431kj"]
 texture = ExtResource("1_rwlaw")
@@ -144,3 +148,30 @@ tile_set = SubResource("TileSet_jvc8p")
 position = Vector2(0.6666667, 0)
 tile_map_data = PackedByteArray("AAAmAA0AAAAHAAUAAAAKAPr/AAAKAAAAAAAKAPv/AAADAAcAAAAKAPz/AAADAAcAAAALAPr/AAAKAAEAAFALAPv/AAAEAAcAAAALAPz/AAAEAAcAAAAMAPr/AAALAAAAAAAMAPv/AAAFAAcAAAAMAPz/AAAFAAcAAAARAAEAAAAKAAQAAAARAAIAAAAKAAUAAAAPAAAAAAAJAAAAAAAPAAEAAAAJAAEAAAAPAAIAAAAJAAIAAAATAAAAAAAJAAAAAAATAAEAAAAJAAEAAAATAAIAAAAJAAIAAAAQAAAAAAAKAAMAAAARAAAAAAAKAAMAAAASAAAAAAALAAMAAAA=")
 tile_set = SubResource("TileSet_jvc8p")
+
+[node name="pot_3" parent="." unique_id=813135876 instance=ExtResource("2_p0lpc")]
+position = Vector2(310.6667, 110.66667)
+
+[node name="small_pot_2" parent="." unique_id=221758060 instance=ExtResource("3_2qrgi")]
+position = Vector2(324.66666, 110.666664)
+
+[node name="pot_4" parent="." unique_id=1073244427 instance=ExtResource("2_p0lpc")]
+position = Vector2(190.66667, 57.333336)
+
+[node name="pot_2" parent="." unique_id=1250884347 instance=ExtResource("4_kuvy6")]
+position = Vector2(39.333332, 241.33334)
+
+[node name="small_pot_1" parent="." unique_id=792387785 instance=ExtResource("5_mt38d")]
+position = Vector2(39.333332, 254.66666)
+
+[node name="pot_5" parent="." unique_id=373400120 instance=ExtResource("2_p0lpc")]
+position = Vector2(510, 396.00003)
+
+[node name="small_pot_3" parent="." unique_id=1194890189 instance=ExtResource("3_2qrgi")]
+position = Vector2(330, 387.33334)
+
+[node name="small_pot_4" parent="." unique_id=1974595423 instance=ExtResource("5_mt38d")]
+position = Vector2(517.3333, 56.666656)
+
+[node name="small_pot_5" parent="." unique_id=103610270 instance=ExtResource("5_mt38d")]
+position = Vector2(505.3333, 56.666664)
