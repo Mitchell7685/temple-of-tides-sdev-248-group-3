@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://byqm154734xyx"]
+
+[ext_resource type="Script" uid="uid://26oswb1di4lh" path="res://Scenes/menu.gd" id="1_611cj"]
+[ext_resource type="FontFile" uid="uid://dvgqj0eodu05e" path="res://Fonts/ARCADECLASSIC.TTF" id="2_g1l0l"]
+[ext_resource type="FontFile" uid="uid://dlatsm8ml6216" path="res://Fonts/Star Crush.otf" id="3_3xxyo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xhh6f"]
+font = ExtResource("2_g1l0l")
+font_size = 31
+outline_size = 13
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_cayip"]
+font = ExtResource("3_3xxyo")
+font_size = 100
+font_color = Color(0.09075489, 0.74290615, 0.57908326, 1)
+outline_size = 22
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Menu" type="Control" unique_id=1865759173]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_611cj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=703859303]
+layout_mode = 0
+offset_right = 849.0
+offset_bottom = 664.0
+color = Color(0.13090089, 0.16634887, 0.231471, 1)
+
+[node name="Label" type="Label" parent="." unique_id=231506389]
+layout_mode = 0
+offset_top = 236.0
+offset_right = 841.0
+offset_bottom = 683.0
+text = "Press   Enter   To   play   again"
+label_settings = SubResource("LabelSettings_xhh6f")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="." unique_id=627949714]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 34.0
+offset_right = 848.0
+offset_bottom = 423.0
+text = "YOU SAVED
+THE TEMPLE!"
+label_settings = SubResource("LabelSettings_cayip")
+horizontal_alignment = 1
+vertical_alignment = 1
