@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b8sivochcfghw"
-path="res://.godot/imported/Adventurer walk Left-Sheet.png-7af6436e39116b59d5d95207d532ace8.ctex"
+path="res://.godot/imported/Adventurer walk Left-Sheet.png-a4a2ec00afe7c87acf81d86ac7d3072a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Hero/Hero spritesheets/Adventurer walk Left-Sheet.png"
-dest_files=["res://.godot/imported/Adventurer walk Left-Sheet.png-7af6436e39116b59d5d95207d532ace8.ctex"]
+source_file="res://hero/Hero spritesheets/Adventurer walk Left-Sheet.png"
+dest_files=["res://.godot/imported/Adventurer walk Left-Sheet.png-a4a2ec00afe7c87acf81d86ac7d3072a.ctex"]
 
 [params]
 

@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://be7a3hvyqom30" path="res://monk/monk.gd" id="1_255bk"]
 [ext_resource type="Texture2D" uid="uid://bwjtrugcwyvxe" path="res://monk/Monk Better idle-Sheet.png" id="2_255bk"]
+[ext_resource type="FontFile" uid="uid://dvgqj0eodu05e" path="res://Fonts/ARCADECLASSIC.TTF" id="3_kognl"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kognl"]
 atlas = ExtResource("2_255bk")
@@ -35,6 +36,15 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yn4wo"]
 size = Vector2(18, 29)
 
+[sub_resource type="LabelSettings" id="LabelSettings_73p1c"]
+line_spacing = -5.14
+font = ExtResource("3_kognl")
+font_size = 9
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kognl"]
+
 [node name="Monk" type="StaticBody2D" unique_id=1468979152]
 collision_layer = 2
 collision_mask = 2
@@ -53,4 +63,22 @@ frame_progress = 0.07772502
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_yn4wo")
 
+[node name="Label" type="Label" parent="." unique_id=115513705]
+visible = false
+offset_left = -39.0
+offset_top = -26.0
+offset_right = 71.0
+offset_bottom = -3.0
+text = "THE SEAL HAS BROKEN!
+YOU MUST FIX THE SEAL"
+label_settings = SubResource("LabelSettings_73p1c")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=406675753]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=517756367]
+shape = SubResource("RectangleShape2D_kognl")
+
 [connection signal="input_event" from="." to="." method="talk"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]

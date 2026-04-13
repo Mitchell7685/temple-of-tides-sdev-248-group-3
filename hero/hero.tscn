@@ -1,22 +1,18 @@
 [gd_scene format=3 uid="uid://bawgmkg38607p"]
 
-[ext_resource type="Script" uid="uid://dop712gufmp5x" path="res://Hero/hero.gd" id="1_dpa0h"]
-[ext_resource type="Texture2D" uid="uid://cby6lrk6u275j" path="res://Hero/Hero spritesheets/Front attack- sheet.png" id="2_siiaj"]
-[ext_resource type="Texture2D" uid="uid://bqygb5snxapss" path="res://Hero/Hero spritesheets/Back attack- sheet.png" id="3_l3vl4"]
-[ext_resource type="Texture2D" uid="uid://cerl5g7gei3ie" path="res://Hero/Hero spritesheets/front Idle-Sheet.png" id="3_vrtht"]
-[ext_resource type="Texture2D" uid="uid://ds8n0n7su80yt" path="res://Hero/Hero spritesheets/Adventurer back Walk-Sheet.png" id="4_h2ti2"]
-[ext_resource type="Texture2D" uid="uid://fpn562fdvlnt" path="res://Hero/Hero spritesheets/Left attack- sheet.png" id="4_jwxx2"]
-[ext_resource type="Texture2D" uid="uid://bwugsc150xu1d" path="res://Hero/Hero spritesheets/Adventurer Front Walk-Sheet.png" id="5_ahpkd"]
-[ext_resource type="Texture2D" uid="uid://b12lk1q81hapr" path="res://Hero/Hero spritesheets/Right attack- sheet.png" id="5_jwxx2"]
-[ext_resource type="Texture2D" uid="uid://bgr2bxas7u7lj" path="res://Hero/Hero spritesheets/Back Idle-Sheet.png" id="5_kglky"]
-[ext_resource type="Texture2D" uid="uid://b8sivochcfghw" path="res://Hero/Hero spritesheets/Adventurer walk Left-Sheet.png" id="6_l3vl4"]
-[ext_resource type="Texture2D" uid="uid://bgsymh1tixf22" path="res://Hero/Hero spritesheets/Left Idle-Sheet.png" id="6_yrbg0"]
-[ext_resource type="Texture2D" uid="uid://dqpqvg3sd1smw" path="res://Hero/Hero spritesheets/Right Idle-Sheet.png" id="7_eu2wf"]
-[ext_resource type="Texture2D" uid="uid://3hg5u7o0qrkx" path="res://Hero/Hero spritesheets/Adventurer walk Right-Sheet.png" id="7_kglky"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_yrbg0"]
-atlas = ExtResource("2_siiaj")
-region = Rect2(32, 0, 16, 32)
+[ext_resource type="Script" uid="uid://dop712gufmp5x" path="res://hero/hero.gd" id="1_dpa0h"]
+[ext_resource type="Texture2D" uid="uid://cby6lrk6u275j" path="res://hero/Hero spritesheets/Front attack- sheet.png" id="2_siiaj"]
+[ext_resource type="Texture2D" uid="uid://bqygb5snxapss" path="res://hero/Hero spritesheets/Back attack- sheet.png" id="3_l3vl4"]
+[ext_resource type="Texture2D" uid="uid://cerl5g7gei3ie" path="res://hero/Hero spritesheets/front Idle-Sheet.png" id="3_vrtht"]
+[ext_resource type="Texture2D" uid="uid://ds8n0n7su80yt" path="res://hero/Hero spritesheets/Adventurer back Walk-Sheet.png" id="4_h2ti2"]
+[ext_resource type="Texture2D" uid="uid://fpn562fdvlnt" path="res://hero/Hero spritesheets/Left attack- sheet.png" id="4_jwxx2"]
+[ext_resource type="Texture2D" uid="uid://bwugsc150xu1d" path="res://hero/Hero spritesheets/Adventurer Front Walk-Sheet.png" id="5_ahpkd"]
+[ext_resource type="Texture2D" uid="uid://b12lk1q81hapr" path="res://hero/Hero spritesheets/Right attack- sheet.png" id="5_jwxx2"]
+[ext_resource type="Texture2D" uid="uid://bgr2bxas7u7lj" path="res://hero/Hero spritesheets/Back Idle-Sheet.png" id="5_kglky"]
+[ext_resource type="Texture2D" uid="uid://b8sivochcfghw" path="res://hero/Hero spritesheets/Adventurer walk Left-Sheet.png" id="6_l3vl4"]
+[ext_resource type="Texture2D" uid="uid://bgsymh1tixf22" path="res://hero/Hero spritesheets/Left Idle-Sheet.png" id="6_yrbg0"]
+[ext_resource type="Texture2D" uid="uid://dqpqvg3sd1smw" path="res://hero/Hero spritesheets/Right Idle-Sheet.png" id="7_eu2wf"]
+[ext_resource type="Texture2D" uid="uid://3hg5u7o0qrkx" path="res://hero/Hero spritesheets/Adventurer walk Right-Sheet.png" id="7_kglky"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eu2wf"]
 atlas = ExtResource("2_siiaj")
@@ -24,10 +20,6 @@ region = Rect2(16, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ylc5j"]
 atlas = ExtResource("2_siiaj")
-region = Rect2(0, 0, 16, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_e71oa"]
-atlas = ExtResource("3_l3vl4")
 region = Rect2(0, 0, 16, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4esg5"]
@@ -38,10 +30,6 @@ region = Rect2(16, 0, 16, 32)
 atlas = ExtResource("3_l3vl4")
 region = Rect2(32, 0, 16, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_04qjd"]
-atlas = ExtResource("4_jwxx2")
-region = Rect2(12, 4, 28, 28)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_3d2ld"]
 atlas = ExtResource("4_jwxx2")
 region = Rect2(40, 4, 28, 28)
@@ -49,10 +37,6 @@ region = Rect2(40, 4, 28, 28)
 [sub_resource type="AtlasTexture" id="AtlasTexture_6u28v"]
 atlas = ExtResource("4_jwxx2")
 region = Rect2(12, 4, 28, 28)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_qijwv"]
-atlas = ExtResource("5_jwxx2")
-region = Rect2(57, 4, 28, 28)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_kkuqt"]
 atlas = ExtResource("5_jwxx2")
@@ -194,9 +178,6 @@ region = Rect2(48, 0, 16, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_yrbg0")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_eu2wf")
 }, {
 "duration": 1.0,
@@ -207,9 +188,6 @@ animations = [{
 "speed": 3.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_e71oa")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_4esg5")
 }, {
@@ -222,9 +200,6 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_04qjd")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_3d2ld")
 }, {
 "duration": 1.0,
@@ -235,9 +210,6 @@ animations = [{
 "speed": 3.0
 }, {
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_qijwv")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_kkuqt")
 }, {
@@ -386,7 +358,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_siiaj"]
-size = Vector2(12, 27)
+size = Vector2(12, 4)
 
 [node name="hero" type="CharacterBody2D" unique_id=522026844]
 collision_mask = 14
@@ -399,11 +371,9 @@ zoom = Vector2(3, 3)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=521365543]
 sprite_frames = SubResource("SpriteFrames_e71oa")
-animation = &"walk_right"
+animation = &"attack_backward"
 autoplay = "idle_backward"
-frame = 1
-frame_progress = 0.7768168
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1629780915]
-position = Vector2(0, 0.5)
+position = Vector2(0, 12)
 shape = SubResource("RectangleShape2D_siiaj")

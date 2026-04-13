@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cerl5g7gei3ie"
-path="res://.godot/imported/front Idle-Sheet.png-87ca99e4fa9d8683f4cb223736f5a17a.ctex"
+path="res://.godot/imported/front Idle-Sheet.png-e4956eaeed772852c6bf2253a4585b14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Hero/Hero spritesheets/front Idle-Sheet.png"
-dest_files=["res://.godot/imported/front Idle-Sheet.png-87ca99e4fa9d8683f4cb223736f5a17a.ctex"]
+source_file="res://hero/Hero spritesheets/front Idle-Sheet.png"
+dest_files=["res://.godot/imported/front Idle-Sheet.png-e4956eaeed772852c6bf2253a4585b14.ctex"]
 
 [params]
 
