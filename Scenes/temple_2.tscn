@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://bovxjkivj33cv" path="res://Scenes/small_pot_2.tscn" id="3_2qrgi"]
 [ext_resource type="PackedScene" uid="uid://bwd1ktsofctso" path="res://Scenes/pot_2.tscn" id="4_kuvy6"]
 [ext_resource type="PackedScene" uid="uid://tgftw06tkfb8" path="res://Scenes/small_pot_1.tscn" id="5_mt38d"]
+[ext_resource type="PackedScene" uid="uid://bawgmkg38607p" path="res://hero/hero.tscn" id="6_2qrgi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_431kj"]
 texture = ExtResource("1_rwlaw")
@@ -175,3 +176,7 @@ position = Vector2(517.3333, 56.666656)
 
 [node name="small_pot_5" parent="." unique_id=103610270 instance=ExtResource("5_mt38d")]
 position = Vector2(505.3333, 56.666664)
+
+[node name="hero" parent="." unique_id=522026844 groups=["player"] instance=ExtResource("6_2qrgi")]
+position = Vector2(279.3333, 401.33334)
+collision_mask = 15

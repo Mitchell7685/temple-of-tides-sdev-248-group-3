@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwjtrugcwyvxe"
-path="res://.godot/imported/Monk Better idle-Sheet.png-c4b645bde9b6e046fd1f12b1d7e36bfc.ctex"
+uid="uid://ds8n0n7su80yt"
+path="res://.godot/imported/Adventurer back Walk-Sheet.png-31d3dd13c175d4113bd238b581aab831.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Finished Human Sprite sheets/Monk Better idle-Sheet.png"
-dest_files=["res://.godot/imported/Monk Better idle-Sheet.png-c4b645bde9b6e046fd1f12b1d7e36bfc.ctex"]
+source_file="res://hero/Hero spritesheets/Adventurer back Walk-Sheet.png"
+dest_files=["res://.godot/imported/Adventurer back Walk-Sheet.png-31d3dd13c175d4113bd238b581aab831.ctex"]
 
 [params]
 
