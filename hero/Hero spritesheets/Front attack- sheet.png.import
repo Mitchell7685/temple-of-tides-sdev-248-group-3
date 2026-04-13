@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cby6lrk6u275j"
-path="res://.godot/imported/Front attack- sheet.png-91e0b5d2ed6fb6437e5bc1aaf7f55394.ctex"
+path="res://.godot/imported/Front attack- sheet.png-e164545270ac68dc1617f19024aaf5f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Hero/Hero spritesheets/Front attack- sheet.png"
-dest_files=["res://.godot/imported/Front attack- sheet.png-91e0b5d2ed6fb6437e5bc1aaf7f55394.ctex"]
+source_file="res://hero/Hero spritesheets/Front attack- sheet.png"
+dest_files=["res://.godot/imported/Front attack- sheet.png-e164545270ac68dc1617f19024aaf5f4.ctex"]
 
 [params]
 
