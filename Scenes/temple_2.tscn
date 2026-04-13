@@ -138,7 +138,13 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_431kj")
 
 [node name="temple_2" type="Node2D" unique_id=1540312739]
-scale = Vector2(1.5, 1.5)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1468321035]
+offset_left = -383.0
+offset_top = -260.0
+offset_right = 1005.0
+offset_bottom = 650.0
+color = Color(0, 0, 0, 1)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=812788206]
 position = Vector2(0.6666667, 0)
@@ -147,7 +153,7 @@ tile_set = SubResource("TileSet_jvc8p")
 
 [node name="TileMapLayer2" type="TileMapLayer" parent="." unique_id=2143493780]
 position = Vector2(0.6666667, 0)
-tile_map_data = PackedByteArray("AAAmAA0AAAAHAAUAAAAKAPr/AAAKAAAAAAAKAPv/AAADAAcAAAAKAPz/AAADAAcAAAALAPr/AAAKAAEAAFALAPv/AAAEAAcAAAALAPz/AAAEAAcAAAAMAPr/AAALAAAAAAAMAPv/AAAFAAcAAAAMAPz/AAAFAAcAAAARAAEAAAAKAAQAAAARAAIAAAAKAAUAAAAPAAAAAAAJAAAAAAAPAAEAAAAJAAEAAAAPAAIAAAAJAAIAAAATAAAAAAAJAAAAAAATAAEAAAAJAAEAAAATAAIAAAAJAAIAAAAQAAAAAAAKAAMAAAARAAAAAAAKAAMAAAASAAAAAAALAAMAAAA=")
+tile_map_data = PackedByteArray("AAARAAEAAAAKAAQAAAARAAIAAAAKAAUAAAAPAAAAAAAJAAAAAAAPAAEAAAAJAAEAAAAPAAIAAAAJAAIAAAATAAAAAAAJAAAAAAATAAEAAAAJAAEAAAATAAIAAAAJAAIAAAAQAAAAAAAKAAMAAAARAAAAAAAKAAMAAAASAAAAAAALAAMAAAA=")
 tile_set = SubResource("TileSet_jvc8p")
 
 [node name="pot_3" parent="." unique_id=813135876 instance=ExtResource("2_p0lpc")]

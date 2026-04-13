@@ -9,6 +9,7 @@ enum {IDLE, WALK, HURT, DEAD}
 var state = IDLE
 enum {UP, DOWN, LEFT, RIGHT}
 var face_dir = DOWN
+var current_interactable = null
 
 func _ready() -> void:
 	change_state(IDLE)
@@ -85,5 +86,23 @@ func get_input() -> void:
 		change_state(WALK)
 	if state == WALK and velocity.x == 0 and velocity.y == 0:
 		change_state(IDLE)
-	
-	
+
+#Interaction handler
+func _process(delta):
+	if current_interactable != null and Input.is_action_just_pressed("interact"):
+		if current_interactable.has_method("interact"):
+			current_interactable.interact()
+
+
+func interact():
+	print("Interacting")
+
+#Check for interaction zone
+func _on_interaction_zone_area_entered(area: Area2D) -> void:
+	if area.is_in_group("interactable"):
+		current_interactable = area.get_parent()
+
+
+func _on_interaction_zone_area_exited(area: Area2D) -> void:
+	if area.get_parent() == current_interactable:
+		current_interactable = null

@@ -44,8 +44,9 @@ outline_size = 2
 outline_color = Color(0, 0, 0, 1)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kognl"]
+size = Vector2(34, 37)
 
-[node name="Monk" type="StaticBody2D" unique_id=1468979152]
+[node name="Monk" type="StaticBody2D" unique_id=1468979152 groups=["interactable"]]
 collision_layer = 2
 collision_mask = 2
 input_pickable = true
@@ -73,9 +74,10 @@ text = "THE SEAL HAS BROKEN!
 YOU MUST FIX THE SEAL"
 label_settings = SubResource("LabelSettings_73p1c")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=406675753]
+[node name="Area2D" type="Area2D" parent="." unique_id=406675753 groups=["interactable"]]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=517756367]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=517756367 groups=["interact"]]
+position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_kognl")
 
 [connection signal="input_event" from="." to="." method="talk"]

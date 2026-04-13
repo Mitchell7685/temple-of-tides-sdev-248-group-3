@@ -360,6 +360,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_siiaj"]
 size = Vector2(12, 4)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrbg0"]
+size = Vector2(29, 37)
+
 [node name="hero" type="CharacterBody2D" unique_id=522026844]
 collision_mask = 14
 motion_mode = 1
@@ -377,3 +380,13 @@ autoplay = "idle_backward"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1629780915]
 position = Vector2(0, 12)
 shape = SubResource("RectangleShape2D_siiaj")
+
+[node name="interaction zone" type="Area2D" parent="." unique_id=1279369159]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction zone" unique_id=2064420547]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_yrbg0")
+debug_color = Color(0.16764131, 0.62756056, 0.42299154, 0.41960785)
+
+[connection signal="area_entered" from="interaction zone" to="." method="_on_interaction_zone_area_entered"]
+[connection signal="area_exited" from="interaction zone" to="." method="_on_interaction_zone_area_exited"]
