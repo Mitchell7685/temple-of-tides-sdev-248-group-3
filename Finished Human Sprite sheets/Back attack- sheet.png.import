@@ -3,15 +3,24 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqygb5snxapss"
+<<<<<<< Updated upstream:Finished Human Sprite sheets/Back attack- sheet.png.import
 path="res://.godot/imported/Back attack- sheet.png-7913e0dd3f95afc5f467a380ff5ae6db.ctex"
+=======
+path="res://.godot/imported/Back attack- sheet.png-04bf724185b76384467a16e32164bef7.ctex"
+>>>>>>> Stashed changes:hero/Hero spritesheets/Back attack- sheet.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< Updated upstream:Finished Human Sprite sheets/Back attack- sheet.png.import
 source_file="res://Finished Human Sprite sheets/Back attack- sheet.png"
 dest_files=["res://.godot/imported/Back attack- sheet.png-7913e0dd3f95afc5f467a380ff5ae6db.ctex"]
+=======
+source_file="res://hero/Hero spritesheets/Back attack- sheet.png"
+dest_files=["res://.godot/imported/Back attack- sheet.png-04bf724185b76384467a16e32164bef7.ctex"]
+>>>>>>> Stashed changes:hero/Hero spritesheets/Back attack- sheet.png.import
 
 [params]
 

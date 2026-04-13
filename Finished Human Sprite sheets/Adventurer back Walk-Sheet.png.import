@@ -3,15 +3,24 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds8n0n7su80yt"
+<<<<<<< Updated upstream:Finished Human Sprite sheets/Adventurer back Walk-Sheet.png.import
 path="res://.godot/imported/Adventurer back Walk-Sheet.png-e01886dfa55dde6ff3a9738685683c41.ctex"
+=======
+path="res://.godot/imported/Adventurer back Walk-Sheet.png-31d3dd13c175d4113bd238b581aab831.ctex"
+>>>>>>> Stashed changes:hero/Hero spritesheets/Adventurer back Walk-Sheet.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< Updated upstream:Finished Human Sprite sheets/Adventurer back Walk-Sheet.png.import
 source_file="res://Finished Human Sprite sheets/Adventurer back Walk-Sheet.png"
 dest_files=["res://.godot/imported/Adventurer back Walk-Sheet.png-e01886dfa55dde6ff3a9738685683c41.ctex"]
+=======
+source_file="res://hero/Hero spritesheets/Adventurer back Walk-Sheet.png"
+dest_files=["res://.godot/imported/Adventurer back Walk-Sheet.png-31d3dd13c175d4113bd238b581aab831.ctex"]
+>>>>>>> Stashed changes:hero/Hero spritesheets/Adventurer back Walk-Sheet.png.import
 
 [params]
 

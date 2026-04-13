@@ -3,15 +3,24 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cerl5g7gei3ie"
+<<<<<<< Updated upstream:Finished Human Sprite sheets/front Idle-Sheet.png.import
 path="res://.godot/imported/front Idle-Sheet.png-d56c3ef42cf79e3c2dafdf30639414cb.ctex"
+=======
+path="res://.godot/imported/front Idle-Sheet.png-e4956eaeed772852c6bf2253a4585b14.ctex"
+>>>>>>> Stashed changes:hero/Hero spritesheets/front Idle-Sheet.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< Updated upstream:Finished Human Sprite sheets/front Idle-Sheet.png.import
 source_file="res://Finished Human Sprite sheets/front Idle-Sheet.png"
 dest_files=["res://.godot/imported/front Idle-Sheet.png-d56c3ef42cf79e3c2dafdf30639414cb.ctex"]
+=======
+source_file="res://hero/Hero spritesheets/front Idle-Sheet.png"
+dest_files=["res://.godot/imported/front Idle-Sheet.png-e4956eaeed772852c6bf2253a4585b14.ctex"]
+>>>>>>> Stashed changes:hero/Hero spritesheets/front Idle-Sheet.png.import
 
 [params]
 

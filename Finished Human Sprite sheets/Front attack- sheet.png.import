@@ -3,15 +3,24 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cby6lrk6u275j"
+<<<<<<< Updated upstream:Finished Human Sprite sheets/Front attack- sheet.png.import
 path="res://.godot/imported/Front attack- sheet.png-533ca9e821ab72350701da27a22a2f25.ctex"
+=======
+path="res://.godot/imported/Front attack- sheet.png-e164545270ac68dc1617f19024aaf5f4.ctex"
+>>>>>>> Stashed changes:hero/Hero spritesheets/Front attack- sheet.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< Updated upstream:Finished Human Sprite sheets/Front attack- sheet.png.import
 source_file="res://Finished Human Sprite sheets/Front attack- sheet.png"
 dest_files=["res://.godot/imported/Front attack- sheet.png-533ca9e821ab72350701da27a22a2f25.ctex"]
+=======
+source_file="res://hero/Hero spritesheets/Front attack- sheet.png"
+dest_files=["res://.godot/imported/Front attack- sheet.png-e164545270ac68dc1617f19024aaf5f4.ctex"]
+>>>>>>> Stashed changes:hero/Hero spritesheets/Front attack- sheet.png.import
 
 [params]
 
