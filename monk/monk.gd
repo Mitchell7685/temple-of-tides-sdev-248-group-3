@@ -1,5 +1,6 @@
 extends StaticBody2D
-signal talking
+
+signal talking(message)
 
 var message: String = "text"
 
