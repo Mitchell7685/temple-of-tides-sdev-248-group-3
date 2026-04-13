@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgsymh1tixf22"
-path="res://.godot/imported/Left Idle-Sheet.png-5ac2522bc32b75dec277f4ea3c4752ca.ctex"
+uid="uid://7ik84xyd5mvd"
+path="res://.godot/imported/Monk sprite.png-9a04cebdbf4f8b7d5a068e90d401bf09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Finished Human Sprite sheets/Left Idle-Sheet.png"
-dest_files=["res://.godot/imported/Left Idle-Sheet.png-5ac2522bc32b75dec277f4ea3c4752ca.ctex"]
+source_file="res://monk/Monk sprite.png"
+dest_files=["res://.godot/imported/Monk sprite.png-9a04cebdbf4f8b7d5a068e90d401bf09.ctex"]
 
 [params]
 

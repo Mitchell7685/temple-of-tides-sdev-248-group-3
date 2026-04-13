@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cgmrpl5pdyqf7" path="res://Water Temple Tile Set finale.png" id="1_nsk3r"]
 [ext_resource type="PackedScene" uid="uid://bovxjkivj33cv" path="res://Scenes/small_pot_2.tscn" id="2_ax6sa"]
 [ext_resource type="PackedScene" uid="uid://s74t3dh0cm66" path="res://Scenes/pot_1.tscn" id="3_d4kua"]
+[ext_resource type="PackedScene" uid="uid://bawgmkg38607p" path="res://Hero/hero.tscn" id="4_d4kua"]
+[ext_resource type="PackedScene" uid="uid://ck3c6j3315ksc" path="res://monk/monk.tscn" id="5_12jk7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_brd3p"]
 texture = ExtResource("1_nsk3r")
@@ -273,3 +275,9 @@ position = Vector2(326, 218.66667)
 
 [node name="pot_1" parent="." unique_id=813135876 instance=ExtResource("3_d4kua")]
 position = Vector2(51.333332, 206)
+
+[node name="hero" parent="." unique_id=522026844 instance=ExtResource("4_d4kua")]
+position = Vector2(252, 23)
+
+[node name="Monk" parent="." unique_id=1468979152 instance=ExtResource("5_12jk7")]
+position = Vector2(136, 159)

@@ -1,13 +1,14 @@
 extends CharacterBody2D
-signal dead
-signal attacking
-signal interaction
+signal died
+signal attacked
+signal hurt
 
-@export var speed: int = 150
-enum {IDLE, RUN, HURT, DEAD}
+@export var speed: int = 75
+@onready var _sprite = $AnimatedSprite2D
+enum {IDLE, WALK, HURT, DEAD}
 var state = IDLE
-enum {UP, DOWN, LEFT, RIGHT, UP_LEFT, UP_RIGHT, DOWN_LEFT, DOWN_RIGHT}
-var face_dir = RIGHT
+enum {UP, DOWN, LEFT, RIGHT}
+var face_dir = DOWN
 
 func _ready() -> void:
 	change_state(IDLE)
@@ -15,64 +16,74 @@ func _ready() -> void:
 func _physics_process(delta: float) -> void:
 	get_input()
 	move_and_slide()
+	position.x = clamp(position.x, 0, 560)
+	position.y = clamp(position.y, 0, 432)
 
 func change_state(new_state) -> void:
 	state = new_state
 	match state:
 		IDLE:
-			pass
-		RUN:
-			pass
+			match face_dir:
+				UP:
+					_sprite.play("idle_forward")
+				DOWN:
+					_sprite.play("idle_backward")
+				LEFT:
+					_sprite.play("idle_left")
+				RIGHT:
+					_sprite.play("idle_right")
+		WALK:
+			match face_dir:
+				UP:
+					_sprite.play("walk_forward")
+				DOWN:
+					_sprite.play("walk_backward")
+				LEFT:
+					_sprite.play("walk_left")
+				RIGHT:
+					_sprite.play("walk_right")
 		HURT:
 			pass
 		DEAD:
-			dead.emit()
+			died.emit()
 			hide()
 
 func get_input() -> void:
 	var attack: bool = Input.is_action_just_pressed("attack")
-	var interact: bool = Input.is_action_just_pressed("interact")
 	var up: bool = Input.is_action_pressed("up")
 	var down: bool = Input.is_action_pressed("down")
 	var left: bool = Input.is_action_pressed("left")
 	var right: bool = Input.is_action_pressed("right")
+	velocity.x = 0
+	velocity.y = 0
 	
 	if attack:
-		attacking.emit(face_dir)
-	if interact:
-		var click_pos: Vector2 = get_global_mouse_position()
-		interaction.emit(click_pos)
+		match face_dir:
+			UP:
+				_sprite.play("attack_forward")
+			DOWN:
+				_sprite.play("attack_backward")
+			LEFT:
+				_sprite.play("attack_left")
+			RIGHT:
+				_sprite.play("attack_right")
+		attacked.emit(face_dir)
 	if up:
-		if not left and not right:
-			face_dir = UP
-		velocity.y += speed
-	if down:
-		if not left and not right:
-			face_dir = DOWN
+		face_dir = UP
 		velocity.y -= speed
+	if down:
+		face_dir = DOWN
+		velocity.y += speed
 	if left:
-		if not up and not down:
-			face_dir = LEFT
+		face_dir = LEFT
 		velocity.x -= speed
 	if right:
-		if not up and not down:
-			face_dir = RIGHT
+		face_dir = RIGHT
 		velocity.x += speed
 	
-	if up:
-		if left:
-			face_dir = UP_LEFT
-		elif right:
-			face_dir = UP_RIGHT
-	elif down:
-		if left:
-			face_dir = DOWN_LEFT
-		elif right:
-			face_dir = DOWN_RIGHT
-	
 	if state == IDLE and (velocity.x != 0 or velocity.y != 0):
-		change_state(RUN)
-	elif state == RUN and velocity.x == 0 and velocity.y == 0:
+		change_state(WALK)
+	if state == WALK and velocity.x == 0 and velocity.y == 0:
 		change_state(IDLE)
 	
 	

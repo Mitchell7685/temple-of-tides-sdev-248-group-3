@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwugsc150xu1d"
-path="res://.godot/imported/Adventurer Front Walk-Sheet.png-8ac125f7dbe5ebaff8b8abd5cc3b3691.ctex"
+uid="uid://bqygb5snxapss"
+path="res://.godot/imported/Back attack- sheet.png-0868ffb01ef822c0565cfadabb00e85a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Finished Human Sprite sheets/Adventurer Front Walk-Sheet.png"
-dest_files=["res://.godot/imported/Adventurer Front Walk-Sheet.png-8ac125f7dbe5ebaff8b8abd5cc3b3691.ctex"]
+source_file="res://Hero/Hero spritesheets/Back attack- sheet.png"
+dest_files=["res://.godot/imported/Back attack- sheet.png-0868ffb01ef822c0565cfadabb00e85a.ctex"]
 
 [params]
 

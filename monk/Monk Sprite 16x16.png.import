@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqygb5snxapss"
-path="res://.godot/imported/Back attack- sheet.png-7913e0dd3f95afc5f467a380ff5ae6db.ctex"
+uid="uid://cslpugkliw02m"
+path="res://.godot/imported/Monk Sprite 16x16.png-78825090dea685e0d35062086880b40a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Finished Human Sprite sheets/Back attack- sheet.png"
-dest_files=["res://.godot/imported/Back attack- sheet.png-7913e0dd3f95afc5f467a380ff5ae6db.ctex"]
+source_file="res://monk/Monk Sprite 16x16.png"
+dest_files=["res://.godot/imported/Monk Sprite 16x16.png-78825090dea685e0d35062086880b40a.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctjl32htc5wvp"
-path="res://.godot/imported/Right attack- sheet.png-025034356c03b68d445f0c3fc90519bb.ctex"
+uid="uid://bgr2bxas7u7lj"
+path="res://.godot/imported/Back Idle-Sheet.png-86fdd496c51ff3a01c29597d17eb39e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Finished Human Sprite sheets/Right attack- sheet.png"
-dest_files=["res://.godot/imported/Right attack- sheet.png-025034356c03b68d445f0c3fc90519bb.ctex"]
+source_file="res://Hero/Hero spritesheets/Back Idle-Sheet.png"
+dest_files=["res://.godot/imported/Back Idle-Sheet.png-86fdd496c51ff3a01c29597d17eb39e0.ctex"]
 
 [params]
 

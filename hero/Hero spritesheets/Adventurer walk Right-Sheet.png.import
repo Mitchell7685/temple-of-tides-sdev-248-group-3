@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7ik84xyd5mvd"
-path="res://.godot/imported/Monk sprite.png-732d2fa084d13994de43a20c128cafd5.ctex"
+uid="uid://3hg5u7o0qrkx"
+path="res://.godot/imported/Adventurer walk Right-Sheet.png-8aaeb1ae0aaffa88fb2b4efe28ffb1ba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Monk sprite.png"
-dest_files=["res://.godot/imported/Monk sprite.png-732d2fa084d13994de43a20c128cafd5.ctex"]
+source_file="res://Hero/Hero spritesheets/Adventurer walk Right-Sheet.png"
+dest_files=["res://.godot/imported/Adventurer walk Right-Sheet.png-8aaeb1ae0aaffa88fb2b4efe28ffb1ba.ctex"]
 
 [params]
 
