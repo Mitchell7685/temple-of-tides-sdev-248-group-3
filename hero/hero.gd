@@ -85,5 +85,6 @@ func get_input() -> void:
 		change_state(WALK)
 	if state == WALK and velocity.x == 0 and velocity.y == 0:
 		change_state(IDLE)
-	
-	
+
+func die() -> void:
+	change_state(DEAD)
