@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://cka2ls565uagq"
+=======
+uid="uid://bhkhrbjqaa87s"
+>>>>>>> Stashed changes
 path="res://.godot/imported/Mob2 walk sheet.png-0bb517e80bcbcb2138e01f4b38a22df2.ctex"
 metadata={
 "vram_texture": false

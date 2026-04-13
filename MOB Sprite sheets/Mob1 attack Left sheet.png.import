@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream
 uid="uid://txjvuk2k14s0"
+=======
+uid="uid://c23p6vuodbx1t"
+>>>>>>> Stashed changes
 path="res://.godot/imported/Mob1 attack Left sheet.png-ccc96f65f238afadfc2d1a3da083d494.ctex"
 metadata={
 "vram_texture": false
