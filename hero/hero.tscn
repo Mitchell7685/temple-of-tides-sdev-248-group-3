@@ -361,15 +361,21 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_siiaj"]
 size = Vector2(12, 4)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrbg0"]
-size = Vector2(29, 37)
-
 [sub_resource type="LabelSettings" id="LabelSettings_ylc5j"]
 line_spacing = -5.14
 font = ExtResource("14_eu2wf")
 font_size = 15
 outline_size = 2
 outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yrbg0"]
+size = Vector2(29, 37)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_eu2wf"]
+radius = 9.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_eu2wf"]
+radius = 18.0
 
 [node name="hero" type="CharacterBody2D" unique_id=522026844]
 collision_mask = 14
@@ -389,13 +395,6 @@ autoplay = "idle_backward"
 position = Vector2(0, 12)
 shape = SubResource("RectangleShape2D_siiaj")
 
-[node name="interaction zone" type="Area2D" parent="." unique_id=1279369159]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction zone" unique_id=2064420547]
-position = Vector2(0, -1.5)
-shape = SubResource("RectangleShape2D_yrbg0")
-debug_color = Color(0.16764131, 0.62756056, 0.42299154, 0.41960785)
-
 [node name="Label" type="Label" parent="." unique_id=892786104]
 visible = false
 offset_left = -26.0
@@ -405,5 +404,25 @@ offset_bottom = 28.0
 text = "Press  E"
 label_settings = SubResource("LabelSettings_ylc5j")
 
+[node name="interaction zone" type="Area2D" parent="." unique_id=1279369159]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="interaction zone" unique_id=2064420547]
+position = Vector2(0, -1.5)
+shape = SubResource("RectangleShape2D_yrbg0")
+debug_color = Color(0.16764131, 0.62756056, 0.42299154, 0.41960785)
+
+[node name="hurtbox" type="Area2D" parent="." unique_id=806984468]
+
+[node name="collision" type="CollisionShape2D" parent="hurtbox" unique_id=1235562437]
+shape = SubResource("CapsuleShape2D_eu2wf")
+
+[node name="hitbox" type="Area2D" parent="." unique_id=409847795 groups=["attack"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" unique_id=1030595942]
+shape = SubResource("CircleShape2D_eu2wf")
+debug_color = Color(0.66962415, 0.4579816, 0.60273015, 0.41960785)
+
 [connection signal="area_entered" from="interaction zone" to="." method="_on_interaction_zone_area_entered"]
 [connection signal="area_exited" from="interaction zone" to="." method="_on_interaction_zone_area_exited"]
+[connection signal="area_entered" from="hurtbox" to="." method="_on_hurtbox_area_entered"]
+[connection signal="area_entered" from="hitbox" to="." method="_on_hitbox_area_entered"]

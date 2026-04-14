@@ -4,6 +4,7 @@ signal attacked
 
 @export var speed: int = 60
 @onready var _sprite = $AnimatedSprite2D
+@export var health := 1
 enum directions {UP, DOWN, LEFT, RIGHT}
 var face_dir = directions.LEFT
 
@@ -52,9 +53,15 @@ func facing_collider(collider: CharacterBody2D) -> bool:
 		can_attack = true
 	return can_attack
 
+
+func take_damage(amount):
+	health -= amount
+	print("Enemy HP:", health)
+	if health <= 0:
+		die()
+		
 func die() -> void:
 	queue_free()
-	died.emit()
 
 func attack() -> void:
 	match face_dir:

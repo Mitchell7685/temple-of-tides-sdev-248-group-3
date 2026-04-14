@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://xgsvijhqedhn"]
 
 [ext_resource type="Script" uid="uid://0fqo67iwcxo5" path="res://mob_1/mob_1.gd" id="1_pryrv"]
-[ext_resource type="Texture2D" uid="uid://5ctw22dsi5gi" path="res://MOB Sprite sheets/Mob1 attack Front sheet.png" id="2_wtbno"]
-[ext_resource type="Texture2D" uid="uid://0ntqrw1l1m5q" path="res://MOB Sprite sheets/Mob1 attack Back sheet.png" id="3_cbqox"]
-[ext_resource type="Texture2D" uid="uid://txjvuk2k14s0" path="res://MOB Sprite sheets/Mob1 attack Left sheet.png" id="4_8b2tq"]
-[ext_resource type="Texture2D" uid="uid://45lqdur4ux8b" path="res://MOB Sprite sheets/Mob1 attack sheet.png" id="5_q1dbm"]
-[ext_resource type="Texture2D" uid="uid://bpfdm7x7p2bl1" path="res://MOB Sprite sheets/Mob1 walk Front sheet.png" id="6_oju4j"]
-[ext_resource type="Texture2D" uid="uid://b76rg56ah2pfb" path="res://MOB Sprite sheets/Mob1 walk Back sheet.png" id="7_8kwnm"]
-[ext_resource type="Texture2D" uid="uid://b2ywjrr4wti3" path="res://MOB Sprite sheets/Mob1 walk Left sheet.png" id="8_n0lej"]
-[ext_resource type="Texture2D" uid="uid://ct634u3tuc72u" path="res://MOB Sprite sheets/Mob1 walk Right sheet.png" id="9_spa8t"]
+[ext_resource type="Texture2D" uid="uid://omioi8fvt1yt" path="res://MOB Sprite sheets/Mob1 attack Front sheet.png" id="2_wtbno"]
+[ext_resource type="Texture2D" uid="uid://ca8ctt8qcebsi" path="res://MOB Sprite sheets/Mob1 attack Back sheet.png" id="3_cbqox"]
+[ext_resource type="Texture2D" uid="uid://b6obday28l340" path="res://MOB Sprite sheets/Mob1 attack Left sheet.png" id="4_8b2tq"]
+[ext_resource type="Texture2D" uid="uid://b15p0gjfkiqwr" path="res://MOB Sprite sheets/Mob1 attack sheet.png" id="5_q1dbm"]
+[ext_resource type="Texture2D" uid="uid://ciapiekredoyj" path="res://MOB Sprite sheets/Mob1 walk Front sheet.png" id="6_oju4j"]
+[ext_resource type="Texture2D" uid="uid://drmue7lyrg4kb" path="res://MOB Sprite sheets/Mob1 walk Back sheet.png" id="7_8kwnm"]
+[ext_resource type="Texture2D" uid="uid://4vpyauq7sk0s" path="res://MOB Sprite sheets/Mob1 walk Left sheet.png" id="8_n0lej"]
+[ext_resource type="Texture2D" uid="uid://dp66fuswpo43d" path="res://MOB Sprite sheets/Mob1 walk Right sheet.png" id="9_spa8t"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0ybfj"]
 atlas = ExtResource("2_wtbno")
@@ -253,6 +253,12 @@ animations = [{
 radius = 8.0
 height = 22.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wtbno"]
+size = Vector2(36, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pryrv"]
+size = Vector2(30, 14)
+
 [node name="mob_1" type="CharacterBody2D" unique_id=1013909069 groups=["enemies"]]
 collision_layer = 2
 collision_mask = 7
@@ -263,12 +269,25 @@ metadata/_edit_group_ = true
 sprite_frames = SubResource("SpriteFrames_6hvov")
 animation = &"walk_right"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=118122193]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=118122193 groups=["enemies"]]
 rotation = 1.5707964
 shape = SubResource("CapsuleShape2D_g40h8")
 
 [node name="Timer" type="Timer" parent="." unique_id=737225146]
 wait_time = 10.0
 autostart = true
+
+[node name="hurtbox" type="Area2D" parent="." unique_id=398101942 groups=["enemy_hurtbox"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtbox" unique_id=1765105994]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_wtbno")
+
+[node name="hitbox" type="Area2D" parent="." unique_id=1687204363 groups=["enemies"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hitbox" unique_id=1534221171]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_pryrv")
+debug_color = Color(0.91386855, 0.152538, 0.61756766, 0.41960785)
 
 [connection signal="timeout" from="Timer" to="." method="change_dir"]

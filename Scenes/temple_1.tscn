@@ -228,7 +228,13 @@ shape = SubResource("RectangleShape2D_o7dtf")
 [node name="mob_1" parent="." unique_id=1013909069 instance=ExtResource("8_o7dtf")]
 position = Vector2(461, 180)
 
+[node name="mob_3" parent="." unique_id=2026264984 instance=ExtResource("8_o7dtf")]
+position = Vector2(83, 204)
+
 [node name="mob_2" parent="." unique_id=1549515489 instance=ExtResource("9_4txkm")]
 position = Vector2(190, 273)
+
+[node name="mob_4" parent="." unique_id=1037173480 instance=ExtResource("9_4txkm")]
+position = Vector2(277, 138)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

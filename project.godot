@@ -29,6 +29,8 @@ version_control/autoload_on_startup=true
 enemies=""
 player=""
 interactable=""
+attack=""
+enemy_hurtbox=""
 
 [input]
 

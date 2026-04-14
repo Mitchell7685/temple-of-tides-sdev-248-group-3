@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://bwd1ktsofctso" path="res://Scenes/pot_2.tscn" id="4_kuvy6"]
 [ext_resource type="PackedScene" uid="uid://tgftw06tkfb8" path="res://Scenes/small_pot_1.tscn" id="5_mt38d"]
 [ext_resource type="PackedScene" uid="uid://bawgmkg38607p" path="res://hero/hero.tscn" id="6_2qrgi"]
+[ext_resource type="PackedScene" uid="uid://svpu64d6axj8" path="res://mob_2/mob_2.tscn" id="8_mt38d"]
+[ext_resource type="PackedScene" uid="uid://xgsvijhqedhn" path="res://mob_1/mob_1.tscn" id="9_al5b6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_431kj"]
 texture = ExtResource("1_rwlaw")
@@ -198,8 +200,23 @@ position = Vector2(505.3333, 56.666664)
 position = Vector2(279.3333, 401.33334)
 collision_mask = 15
 
-[node name="Area2D" type="Area2D" parent="." unique_id=956257462 groups=["interactable"]]
+[node name="Area2D" type="Area2D" parent="." unique_id=956257462]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=291880870 groups=["interactable"]]
 position = Vector2(280.5, 41.5)
 shape = SubResource("RectangleShape2D_2qrgi")
+
+[node name="mob_2" parent="." unique_id=1013909069 instance=ExtResource("8_mt38d")]
+position = Vector2(167, 234)
+
+[node name="mob_4" parent="." unique_id=919571349 instance=ExtResource("8_mt38d")]
+position = Vector2(397, 182)
+
+[node name="mob_3" parent="." unique_id=1504674557 instance=ExtResource("9_al5b6")]
+position = Vector2(490, 236)
+
+[node name="mob_6" parent="." unique_id=2071754176 instance=ExtResource("9_al5b6")]
+position = Vector2(198, 324)
+
+[node name="mob_5" parent="." unique_id=624904041 instance=ExtResource("9_al5b6")]
+position = Vector2(67, 166)
