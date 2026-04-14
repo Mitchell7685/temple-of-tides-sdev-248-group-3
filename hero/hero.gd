@@ -5,7 +5,7 @@ signal hurt
 
 @export var speed: int = 75
 @onready var _sprite = $AnimatedSprite2D
-@export var max_health := 5
+@export var max_health := 3
 enum {IDLE, WALK, HURT, DEAD}
 var state = IDLE
 enum {UP, DOWN, LEFT, RIGHT}
