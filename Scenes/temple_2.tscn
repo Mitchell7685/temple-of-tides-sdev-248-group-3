@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://bht2tvgfgruay"]
 
+[ext_resource type="Script" uid="uid://0f2c587vscfl" path="res://Scenes/temple_2.gd" id="1_kuvy6"]
 [ext_resource type="Texture2D" uid="uid://cgmrpl5pdyqf7" path="res://Water Temple Tile Set finale.png" id="1_rwlaw"]
 [ext_resource type="PackedScene" uid="uid://s74t3dh0cm66" path="res://Scenes/pot_1.tscn" id="2_p0lpc"]
 [ext_resource type="PackedScene" uid="uid://bovxjkivj33cv" path="res://Scenes/small_pot_2.tscn" id="3_2qrgi"]
@@ -97,23 +98,26 @@ texture = ExtResource("1_rwlaw")
 1:6/0 = 0
 2:6/0 = 0
 3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:6/0 = 0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:6/0 = 0
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:6/0 = 0
 7:6/0 = 0
 8:6/0 = 0
 9:6/0 = 0
-9:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 10:6/0 = 0
-10:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:6/0 = 0
-11:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 0:7/0 = 0
 1:7/0 = 0
 2:7/0 = 0
 3:7/0 = 0
+3:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:7/0 = 0
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:7/0 = 0
+5:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:7/0 = 0
 7:7/0 = 0
 8:7/0 = 0
@@ -127,8 +131,11 @@ texture = ExtResource("1_rwlaw")
 1:8/0 = 0
 2:8/0 = 0
 3:8/0 = 0
+3:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:8/0 = 0
+4:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 5:8/0 = 0
+5:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 6:8/0 = 0
 7:8/0 = 0
 8:8/0 = 0
@@ -137,7 +144,11 @@ texture = ExtResource("1_rwlaw")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_431kj")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2qrgi"]
+size = Vector2(37, 37)
+
 [node name="temple_2" type="Node2D" unique_id=1540312739]
+script = ExtResource("1_kuvy6")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1468321035]
 offset_left = -383.0
@@ -186,3 +197,9 @@ position = Vector2(505.3333, 56.666664)
 [node name="hero" parent="." unique_id=522026844 groups=["player"] instance=ExtResource("6_2qrgi")]
 position = Vector2(279.3333, 401.33334)
 collision_mask = 15
+
+[node name="Area2D" type="Area2D" parent="." unique_id=956257462 groups=["interactable"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=291880870 groups=["interactable"]]
+position = Vector2(280.5, 41.5)
+shape = SubResource("RectangleShape2D_2qrgi")

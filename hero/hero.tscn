@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bgsymh1tixf22" path="res://hero/Hero spritesheets/Left Idle-Sheet.png" id="6_yrbg0"]
 [ext_resource type="Texture2D" uid="uid://dqpqvg3sd1smw" path="res://hero/Hero spritesheets/Right Idle-Sheet.png" id="7_eu2wf"]
 [ext_resource type="Texture2D" uid="uid://3hg5u7o0qrkx" path="res://hero/Hero spritesheets/Adventurer walk Right-Sheet.png" id="7_kglky"]
+[ext_resource type="FontFile" uid="uid://dvgqj0eodu05e" path="res://Fonts/ARCADECLASSIC.TTF" id="14_eu2wf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eu2wf"]
 atlas = ExtResource("2_siiaj")
@@ -363,6 +364,13 @@ size = Vector2(12, 4)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yrbg0"]
 size = Vector2(29, 37)
 
+[sub_resource type="LabelSettings" id="LabelSettings_ylc5j"]
+line_spacing = -5.14
+font = ExtResource("14_eu2wf")
+font_size = 15
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
 [node name="hero" type="CharacterBody2D" unique_id=522026844]
 collision_mask = 14
 motion_mode = 1
@@ -387,6 +395,15 @@ shape = SubResource("RectangleShape2D_siiaj")
 position = Vector2(0, -1.5)
 shape = SubResource("RectangleShape2D_yrbg0")
 debug_color = Color(0.16764131, 0.62756056, 0.42299154, 0.41960785)
+
+[node name="Label" type="Label" parent="." unique_id=892786104]
+visible = false
+offset_left = -26.0
+offset_top = 12.0
+offset_right = 30.0
+offset_bottom = 28.0
+text = "Press  E"
+label_settings = SubResource("LabelSettings_ylc5j")
 
 [connection signal="area_entered" from="interaction zone" to="." method="_on_interaction_zone_area_entered"]
 [connection signal="area_exited" from="interaction zone" to="." method="_on_interaction_zone_area_exited"]

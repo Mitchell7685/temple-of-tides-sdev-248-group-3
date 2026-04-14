@@ -100,9 +100,11 @@ func interact():
 #Check for interaction zone
 func _on_interaction_zone_area_entered(area: Area2D) -> void:
 	if area.is_in_group("interactable"):
+		$Label.show()
 		current_interactable = area.get_parent()
 
 
 func _on_interaction_zone_area_exited(area: Area2D) -> void:
 	if area.get_parent() == current_interactable:
+		$Label.hide()
 		current_interactable = null
