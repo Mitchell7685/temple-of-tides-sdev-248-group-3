@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqpqvg3sd1smw"
-path="res://.godot/imported/Right Idle-Sheet.png-08f5ba5e7d3a32080e5e6e9f6f9605ef.ctex"
+uid="uid://bgr2bxas7u7lj"
+path="res://.godot/imported/Back Idle-Sheet.png-3f137abc4bf13905767c0687a1fb4f4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Finished Human Sprite sheets/Right Idle-Sheet.png"
-dest_files=["res://.godot/imported/Right Idle-Sheet.png-08f5ba5e7d3a32080e5e6e9f6f9605ef.ctex"]
+source_file="res://hero/Hero spritesheets/Back Idle-Sheet.png"
+dest_files=["res://.godot/imported/Back Idle-Sheet.png-3f137abc4bf13905767c0687a1fb4f4e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cslpugkliw02m"
-path="res://.godot/imported/Monk Sprite 16x16.png-f0cec174b7653b01d50b8f8da26571b4.ctex"
+uid="uid://b12lk1q81hapr"
+path="res://.godot/imported/Right attack- sheet.png-d4218d80fc016d67f73af15398d7f506.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Monk Sprite 16x16.png"
-dest_files=["res://.godot/imported/Monk Sprite 16x16.png-f0cec174b7653b01d50b8f8da26571b4.ctex"]
+source_file="res://hero/Hero spritesheets/Right attack- sheet.png"
+dest_files=["res://.godot/imported/Right attack- sheet.png-d4218d80fc016d67f73af15398d7f506.ctex"]
 
 [params]
 

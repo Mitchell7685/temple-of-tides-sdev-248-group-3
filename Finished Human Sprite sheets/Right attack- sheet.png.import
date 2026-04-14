@@ -2,16 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< Updated upstream:Finished Human Sprite sheets/Right attack- sheet.png.import
 uid="uid://ctjl32htc5wvp"
 path="res://.godot/imported/Right attack- sheet.png-025034356c03b68d445f0c3fc90519bb.ctex"
+=======
+uid="uid://b12lk1q81hapr"
+path="res://.godot/imported/Right attack- sheet.png-d4218d80fc016d67f73af15398d7f506.ctex"
+>>>>>>> Stashed changes:hero/Hero spritesheets/Right attack- sheet.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< Updated upstream:Finished Human Sprite sheets/Right attack- sheet.png.import
 source_file="res://Finished Human Sprite sheets/Right attack- sheet.png"
 dest_files=["res://.godot/imported/Right attack- sheet.png-025034356c03b68d445f0c3fc90519bb.ctex"]
+=======
+source_file="res://hero/Hero spritesheets/Right attack- sheet.png"
+dest_files=["res://.godot/imported/Right attack- sheet.png-d4218d80fc016d67f73af15398d7f506.ctex"]
+>>>>>>> Stashed changes:hero/Hero spritesheets/Right attack- sheet.png.import
 
 [params]
 

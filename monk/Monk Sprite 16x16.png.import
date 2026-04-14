@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwjtrugcwyvxe"
-path="res://.godot/imported/Monk Better idle-Sheet.png-c4b645bde9b6e046fd1f12b1d7e36bfc.ctex"
+uid="uid://cslpugkliw02m"
+path="res://.godot/imported/Monk Sprite 16x16.png-78825090dea685e0d35062086880b40a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Finished Human Sprite sheets/Monk Better idle-Sheet.png"
-dest_files=["res://.godot/imported/Monk Better idle-Sheet.png-c4b645bde9b6e046fd1f12b1d7e36bfc.ctex"]
+source_file="res://monk/Monk Sprite 16x16.png"
+dest_files=["res://.godot/imported/Monk Sprite 16x16.png-78825090dea685e0d35062086880b40a.ctex"]
 
 [params]
 

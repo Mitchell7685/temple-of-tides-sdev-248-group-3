@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4vpyauq7sk0s"
-path="res://.godot/imported/Mob1 walk Left sheet.png-14031bc860ea96d4b0993d5323f4f185.ctex"
+uid="uid://bgsymh1tixf22"
+path="res://.godot/imported/Left Idle-Sheet.png-3ed9aede1d569687e2ffa7389a9954cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://MOB Sprite sheets/Mob1 walk Left sheet.png"
-dest_files=["res://.godot/imported/Mob1 walk Left sheet.png-14031bc860ea96d4b0993d5323f4f185.ctex"]
+source_file="res://hero/Hero spritesheets/Left Idle-Sheet.png"
+dest_files=["res://.godot/imported/Left Idle-Sheet.png-3ed9aede1d569687e2ffa7389a9954cf.ctex"]
 
 [params]
 

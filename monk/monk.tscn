@@ -1,31 +1,32 @@
 [gd_scene format=3 uid="uid://ck3c6j3315ksc"]
 
 [ext_resource type="Script" uid="uid://be7a3hvyqom30" path="res://monk/monk.gd" id="1_255bk"]
-[ext_resource type="Texture2D" uid="uid://7ik84xyd5mvd" path="res://Monk sprite.png" id="2_kognl"]
+[ext_resource type="Texture2D" uid="uid://bwjtrugcwyvxe" path="res://monk/Monk Better idle-Sheet.png" id="2_255bk"]
+[ext_resource type="FontFile" uid="uid://dvgqj0eodu05e" path="res://Fonts/ARCADECLASSIC.TTF" id="3_kognl"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kognl"]
+atlas = ExtResource("2_255bk")
+region = Rect2(0, 2, 16, 28)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_73p1c"]
-atlas = ExtResource("2_kognl")
-region = Rect2(0, 0, 32, 32)
+atlas = ExtResource("2_255bk")
+region = Rect2(16, 2, 16, 28)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_amy51"]
-atlas = ExtResource("2_kognl")
-region = Rect2(32, 0, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ca1ql"]
-atlas = ExtResource("2_kognl")
-region = Rect2(64, 0, 32, 32)
+atlas = ExtResource("2_255bk")
+region = Rect2(32, 2, 16, 28)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_yvo7p"]
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_kognl")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_73p1c")
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_amy51")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ca1ql")
 }],
 "loop": true,
 "name": &"idle",
@@ -35,9 +36,20 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yn4wo"]
 size = Vector2(18, 29)
 
-[node name="Monk" type="StaticBody2D" unique_id=1468979152]
+[sub_resource type="LabelSettings" id="LabelSettings_73p1c"]
+line_spacing = -5.14
+font = ExtResource("3_kognl")
+font_size = 15
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kognl"]
+size = Vector2(34, 37)
+
+[node name="Monk" type="StaticBody2D" unique_id=1468979152 groups=["interactable"]]
 collision_layer = 2
 collision_mask = 2
+input_pickable = true
 script = ExtResource("1_255bk")
 metadata/_edit_group_ = true
 
@@ -45,7 +57,30 @@ metadata/_edit_group_ = true
 sprite_frames = SubResource("SpriteFrames_yvo7p")
 animation = &"idle"
 autoplay = "idle"
+frame = 1
+frame_progress = 0.07772502
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1966532746]
 position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_yn4wo")
+
+[node name="Label" type="Label" parent="." unique_id=115513705]
+visible = false
+offset_left = -73.0
+offset_top = -45.0
+offset_right = 76.0
+offset_bottom = -18.0
+text = "THE SEAL HAS BROKEN!
+YOU MUST FIX THE SEAL"
+label_settings = SubResource("LabelSettings_73p1c")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=406675753 groups=["interactable"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=517756367 groups=["interact"]]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_kognl")
+
+[connection signal="input_event" from="." to="." method="talk"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
