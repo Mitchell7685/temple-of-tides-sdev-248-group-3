@@ -2,6 +2,7 @@ extends CharacterBody2D
 signal died
 signal attacked
 signal hurt
+signal health_changed(new_health)
 
 @export var speed: int = 75
 @onready var _sprite = $AnimatedSprite2D
@@ -15,6 +16,7 @@ var is_invincible := false
 var health := max_health 
 
 func _ready() -> void:
+	add_to_group("player")
 	change_state(IDLE)
 	health = max_health
 	change_state(IDLE)
@@ -144,8 +146,8 @@ func take_damage(amount := 1):
 	
 	health -= amount
 	print("Health:", health)
+	health_changed.emit(health)
 	
-	is_invincible = true
 	change_state(HURT)
 	hurt.emit()
 	

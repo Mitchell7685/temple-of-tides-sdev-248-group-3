@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bawgmkg38607p" path="res://hero/hero.tscn" id="4_d4kua"]
 [ext_resource type="PackedScene" uid="uid://ck3c6j3315ksc" path="res://monk/monk.tscn" id="5_12jk7"]
 [ext_resource type="Script" uid="uid://coqh3wnqsnrqx" path="res://Scripts/levelChange.gd" id="6_wyo6c"]
+[ext_resource type="PackedScene" uid="uid://c38brukqj36lj" path="res://health.tscn" id="7_dksw6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_brd3p"]
 texture = ExtResource("1_nsk3r")
@@ -315,7 +316,7 @@ position = Vector2(51.333332, 206)
 [node name="Monk" parent="." unique_id=1468979152 instance=ExtResource("5_12jk7")]
 position = Vector2(136, 159)
 
-[node name="hero" parent="." unique_id=522026844 groups=["player"] instance=ExtResource("4_d4kua")]
+[node name="hero" parent="." unique_id=522026844 instance=ExtResource("4_d4kua")]
 position = Vector2(252, 23)
 collision_mask = 15
 
@@ -325,5 +326,11 @@ script = ExtResource("6_wyo6c")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1854857964]
 position = Vector2(160, 109)
 shape = SubResource("RectangleShape2D_dksw6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1050824968]
+
+[node name="CanvasLayer" parent="CanvasLayer" unique_id=2046580076 instance=ExtResource("7_dksw6")]
+offset = Vector2(14.5, 6.96)
+transform = Transform2D(2.17, 0, 0, 1, 14.5, 6.96)
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

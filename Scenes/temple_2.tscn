@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bawgmkg38607p" path="res://hero/hero.tscn" id="6_2qrgi"]
 [ext_resource type="PackedScene" uid="uid://svpu64d6axj8" path="res://mob_2/mob_2.tscn" id="8_mt38d"]
 [ext_resource type="PackedScene" uid="uid://xgsvijhqedhn" path="res://mob_1/mob_1.tscn" id="9_al5b6"]
+[ext_resource type="PackedScene" uid="uid://c38brukqj36lj" path="res://health.tscn" id="10_2lawl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_431kj"]
 texture = ExtResource("1_rwlaw")
@@ -198,7 +199,7 @@ position = Vector2(517.3333, 56.666656)
 [node name="small_pot_5" parent="." unique_id=103610270 instance=ExtResource("5_mt38d")]
 position = Vector2(505.3333, 56.666664)
 
-[node name="hero" parent="." unique_id=522026844 groups=["player"] instance=ExtResource("6_2qrgi")]
+[node name="hero" parent="." unique_id=522026844 instance=ExtResource("6_2qrgi")]
 position = Vector2(279.3333, 401.33334)
 collision_mask = 15
 
@@ -222,3 +223,9 @@ position = Vector2(198, 324)
 
 [node name="mob_5" parent="." unique_id=624904041 instance=ExtResource("9_al5b6")]
 position = Vector2(67, 166)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=442179880]
+
+[node name="CanvasLayer" parent="CanvasLayer" unique_id=2046580076 instance=ExtResource("10_2lawl")]
+offset = Vector2(14.5, 6.96)
+transform = Transform2D(2.17, 0, 0, 1, 14.5, 6.96)
