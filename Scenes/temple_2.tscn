@@ -83,6 +83,7 @@ texture = ExtResource("1_rwlaw")
 8:4/0 = 0
 9:4/0 = 0
 10:4/0 = 0
+10:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:4/0 = 0
 0:5/0 = 0
 1:5/0 = 0
@@ -95,6 +96,7 @@ texture = ExtResource("1_rwlaw")
 8:5/0 = 0
 9:5/0 = 0
 10:5/0 = 0
+10:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 11:5/0 = 0
 0:6/0 = 0
 1:6/0 = 0
@@ -200,7 +202,7 @@ position = Vector2(505.3333, 56.666664)
 position = Vector2(279.3333, 401.33334)
 collision_mask = 15
 
-[node name="Area2D" type="Area2D" parent="." unique_id=956257462]
+[node name="Area2D" type="Area2D" parent="." unique_id=956257462 groups=["interactable"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=291880870 groups=["interactable"]]
 position = Vector2(280.5, 41.5)
