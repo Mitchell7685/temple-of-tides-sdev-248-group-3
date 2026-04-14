@@ -86,8 +86,11 @@ func get_input() -> void:
 
 
 func start_attack():
+	if $hitbox.monitoring:
+		return # prevents double attack spam
+
 	$hitbox.monitoring = true  
-	
+
 	match face_dir:
 		UP:
 			_sprite.play("attack_forward")
@@ -97,11 +100,12 @@ func start_attack():
 			_sprite.play("attack_left")
 		RIGHT:
 			_sprite.play("attack_right")
-	
+
 	attacked.emit(face_dir)
-	
-	await _sprite.animation_finished
-	
+
+	# safety timer (backup in case animation breaks)
+	await get_tree().create_timer(0.4).timeout
+
 	$hitbox.monitoring = false
 
 #Interaction handler
